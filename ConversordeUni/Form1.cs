@@ -25,7 +25,7 @@ namespace ConversordeUni
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.Items.Clear();
-            comboBox1.Items.Add("Kilómetros a Millas");
+            comboBox1.Items.Add("Kilometros a Millas");
             comboBox1.Items.Add("Celsius a Fahrenheit");
             comboBox1.SelectedIndex = 0;
         }
@@ -34,7 +34,7 @@ namespace ConversordeUni
         {
             if (!double.TryParse(textBox1.Text, out double valor))
             {
-                MessageBox.Show("Ingrese un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("INSERTE UN NUMERO VALIDO.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -43,7 +43,7 @@ namespace ConversordeUni
             if (comboBox1.SelectedIndex == 0)
             {
                 resultado = valor * 0.621371;
-                label3.Text = "Resultado: " + resultado.ToString("N2") + " millas";
+                label3.Text = "Resultado: " + resultado.ToString("N2") + " Millas";
             }
             else
             {
